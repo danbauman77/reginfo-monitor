@@ -1,4 +1,4 @@
-# RegInfo RIN Monitor
+# RegInfo Monitor
 
 Command-line tool to monitor RINs via RegInfo.gov XML exports.
 
