@@ -1,0 +1,18 @@
+{
+  "rins": [
+    "####-XX##"
+  ],
+  "scheduled_check": {
+    "enabled": true,
+    "time": "09:00"
+  },
+  "data_directory": "reginfo_data",
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "username": "",
+    "password": "",
+    "from_address": "",
+    "to_address": ""
+  }
+}
