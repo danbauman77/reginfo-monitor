@@ -271,7 +271,7 @@ class RINMonitor:
             return False
         
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = f'RegInfo RIN {rin} Change: {old_pubid} → {new_pubid}'
+        msg['Subject'] = f'RegInfo RIN {rin} Change: {old_pubid} -> {new_pubid}'
         msg['From'] = smtp_config['from_address']
         msg['To'] = smtp_config['to_address']
         
@@ -288,7 +288,7 @@ RegInfo Monitor Alert
 =========================
 
 RIN: {rin}
-Change: {old_pubid} → {new_pubid}
+Change: {old_pubid} -> {new_pubid}
 Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 View XML:
@@ -406,7 +406,7 @@ Current: {new_file}
             
             if current_hash != previous_hash:
 
-                print(f"CHANGE DETECTED: {previous_pubid} → {latest_pubid}")
+                print(f"CHANGE DETECTED: {previous_pubid} -> {latest_pubid}")
                 
                 new_file = self.save_rin_xml(rin, latest_pubid, current_xml)
                 diff = self.compare_xml(previous_xml, current_xml)
